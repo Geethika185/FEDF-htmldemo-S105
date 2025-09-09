@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Elements Demo</title>
+    <style>
+      *{
+        background-color: bisque;
+        text-align: center;
+      }
+      .buttons{
+        color: blueviolet;
+      }
+      #b1{
+        background-color: cornflowerblue;
+      }
+      #b2{
+        background-color: aqua;
+      }
+      #b3{
+        background-color: yellow;
+      }
+      #b1:hover{
+        cursor: pointer;
+        background-color: crimson;
+      }
+      nav{
+        background-color: darkmagenta;
+      }
+      nav a{
+        text-decoration: none;
+        display: inline-flex;
+      }
+      header h1{
+        background-color: hotpink;
+      
+    </style>
+</head>
+<body>
+  <header>
+     <h1>Welcome to my portfolio</h1> 
+  </header>
+   <nav>
+     <a href="a">Personal Information</a>
+     <a href="a">Preferences</a>
+     <a href="a">Additional Information</a>
+   </nav>
+   <form action="#" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your fullname" required/><br>
+        <label>E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="enter email@gmail.com" required/><br>
+        <label>Password:</label><br>
+        <input type="password" id="name" required/><br>
+        <label>DOB:</label><br>
+        <input type="date" id="dob" name="dob" placeholder="select your date of birth" /><br>
+        <label>Website URL:</label><br>
+        <input type="URL" id="name" name="URL" placeholder="enter website URL"/><br>
+      </fieldset>
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>Select Gender:</label><br>
+        <label>Male:</label>
+        <input type="radio" id="Male" name="male" />
+        <label>Female:</label>
+        <input type="radio" id="Female" name="female"/><br>
+        <label>Languages:</label>
+        <label>Telugu:</label>
+        <input type="checkbox" id="Languages" name="Languages"/><br>
+        <label>Languages:</label>
+        <label>English:</label>
+        <input type="checkbox" id="Languages" name="Languages"/><br>
+        <label>Languages:</label>
+        <label>Hindi:</label>
+        <input type="checkbox" id="Languages" name="Languages"/><br>
+        <label>Country</label>
+        <select id="country">
+             <option value=" ">Select country:</option>
+             <option value="India">India</option>
+             <option value="USA">USA</option>
+             <option value="England">England</option>
+             <option value="China">China</option>
+        </select><br>     
+        <label>About Me:</label>
+        <textarea id="aboutme" name="aboutme" rows="5" placeholder="give introduction about yourself" required></textarea>
+            </fieldset>
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label>upload file:</label>
+          <input type="file" id="file" accept=".pdf"/>
+        </fieldset>
+        <div class="buttons">
+            <input type="submit" id="b1" value="submit">
+            <input type="reset" id="b2" value="reset">
+            <input type="button" id="b3" value="onclick" onclick="alert('Button was clicked')">
+          </div>
+   </form>
+</body>
+</html>

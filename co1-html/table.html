@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table element Document</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        h1{
+            font-size:15px;
+    
+        }
+        table tbody{
+            background-color: aquamarine;
+            text-align:center;
+        }
+        th{
+            background-color: blueviolet;
+            color: brown
+            ;
+        }
+        thead{
+            background-color: black;
+        }
+        tfoot td
+        {
+           background-color: antiquewhite;
+        }
+        caption{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Student Result</h1>
+    <table border="1" align="center">
+        <head>
+            <caption>Student Marks Report </caption>
+            <tr>
+                <th rowspan="2">SID</th>
+                <th rowspan="2">SNAME</th>
+                <th colspan="3">MARKS</th>
+                <th rowspan="2">Total</th>
+                <th rowspan="2">Grade</th>
+
+            </tr>
+            <tr>
+              <th>Java</th>
+              <th>Python</th>
+              <th>Fullstack</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Geethika</td>
+                    <td>99</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>279</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Vasavi</td>
+                    <td>99</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>279</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bhavya</td>
+                    <td>99</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>279</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Teju</td>
+                    <td>99</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>279</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Spoorthi</td>
+                    <td>99</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>279</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Average=</td>
+                    <td >279</td>
+                    <td>-</td>
+                </tr>
+            </tfoot>
+        </head>
+    </table>
+</body>
+</html>

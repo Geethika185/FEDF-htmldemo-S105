@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Control Statements</title>
+</head>
+<body>
+    <h1>control statements demonstration in js</h1>
+    <p id="demo"></p>
+    <script>
+        let x;
+        let n1=parseInt(prompt("Enter x value"));
+        document.getElementById("demo").innerHTML="first element: "+n1+"<br>";
+        if(n1==1)
+        {
+          document.getElementById("demo").innerHTML+="monday"+n1; "<br>"
+        }
+        else if(n1==2)
+        {
+           document.getElementById("demo").innerHTML="tuesday"+n1+ "<br>"
+        }
+        else if(n1==3)
+        {
+          
+           document.getElementById("demo").innerHTML="wednesday"+n1+ "<br>"
+        }
+        else if(n1==4)
+        {
+          
+           document.getElementById("demo").innerHTML="thursday"+n1+ "<br>"
+        }
+        else if(n1==5)
+        {
+          
+           document.getElementById("demo").innerHTML="friday"+n1+ "<br>"
+        }
+        else if(n1==6)
+        {
+          
+           document.getElementById("demo").innerHTML="saturday"+n1+ "<br>"
+        }
+        else if(n1==0)
+        {
+          
+           document.getElementById("demo").innerHTML="sunday"+n1+ "<br>"
+        }
+        else{
+           document.getElementById("demo").innerHTML="Invalid day"+n1+ "<br>"
+        }
+    </script> 
+</body>
+</html>
